@@ -4,3 +4,11 @@
 .enabled {
   display: block!important;
 }
+h1 {
+  color: darkslategray;
+  background: darkred;
+  text-align: center;
+}
+.active {
+  color: red;
+}

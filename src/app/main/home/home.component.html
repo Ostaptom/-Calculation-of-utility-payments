@@ -1,8 +1,8 @@
 <div class="container">
   <div class="index_content">
     <div class="container_btn">
-      <span (click)="showTabs(1)">Електроенергія</span>
-      <span (click)="showTabs(2)">Газ</span>
+      <span (click)="showTabs(1)" [ngClass]="{'active': activeTabs == 1}">Електроенергія</span>
+      <span (click)="showTabs(2)" [ngClass]="{'active': activeTabs == 2}">Газ</span>
     </div>
     <div class="container_content">
       <app-light-block class="disabled" [ngClass]="{'enabled': activeTabs == 1}"></app-light-block>
