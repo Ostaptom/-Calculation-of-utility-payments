@@ -1,0 +1,6 @@
+<div class="container">
+  <input type="number" [(ngModel)]="this.oldNumber" placeholder="Введіть старий показник лічильника">
+  <input type="number" [(ngModel)]="this.newNumber" placeholder="Введіть новий показник лічильника">
+  <span (click)="createResult()">run</span>
+  <p *ngIf="result != 0">{{result}}</p>
+</div>
