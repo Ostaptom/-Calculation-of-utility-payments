@@ -1,3 +1,12 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <div class="index_content">
+    <div class="container_btn">
+      <span (click)="showTabs(1)">Електроенергія</span>
+      <span (click)="showTabs(2)">Газ</span>
+    </div>
+    <div class="container_content">
+      <app-light-block class="disabled" [ngClass]="{'enabled': activeTabs == 1}"></app-light-block>
+      <app-gas-block class="disabled" [ngClass]="{'enabled': activeTabs == 2}"></app-gas-block>
+    </div>
+  </div>
+</div>
